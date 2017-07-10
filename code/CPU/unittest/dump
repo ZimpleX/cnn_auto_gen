@@ -1,0 +1,56 @@
+==========================
+= Unit Test for FFT, MAC =
+==========================
+unittest.cpp:190:run() : Allocating Service
+[0;33m  [APP]  ASE Session Directory located at =>
+         /import/usc/home/zengh/pj_chi/ase/work/
+[0m[0;33m  [APP]  Initializing simulation session ... [0m[0;33m DONE
+  [APP]  Session started
+  [APP]  Creating CSR map...
+[0;33m  [APP]  Attempting to open a shared memory... [0m[0;33mSUCCESS
+[0m[0m[0;33m  [APP]  Attempting to open a shared memory... [0m[0;33mSUCCESS
+[0m[0;33m  [APP]  Issuing SPL Reset
+[0m[0;33m  [APP]  CSR Write #1 : offset = 0x1010, data = 0x00000001
+[0m[0;33m  [APP]  CSR Write #2 : offset = 0x1010, data = 0x00000000
+[0m[0;33m  [APP]  CSR Write #3 : offset = 0x1004, data = 0x0000002d
+[0m[0;33m  [APP]  CSR Write #4 : offset = 0x1000, data = 0x42000000
+[0m
+*** SPL ID 0 0 0 11100101***
+Polling AFU_ID...
+[0;33m  [APP]  CSR Write #5 : offset = 0x8a04, data = 0x0000002d
+[0m[0;33m  [APP]  CSR Write #6 : offset = 0x8a00, data = 0x42000000
+[0m
+*** AFU_ID 0 0 0 11100181***
+runtimeClient.h:118:runtimeAllocateServiceSucceeded() : Runtime Allocate Service Succeeded
+unittest.cpp:373:serviceAllocated() : Service Allocated
+[0;33m  [APP]  Attempting to open a shared memory... [0m[0;33mSUCCESS
+[0mAPP-C: Building SPL page table and context
+[0;33m   AFU CXT size = 0xa080 bytes | Number of 2 MB chunks = 1
+[0m[0;33m  [APP]  Attempting to open a shared memory... [0m[0;33mSUCCESS
+[0m[0;33m  [APP]  Attempting to open a shared memory... [0m[0;33mSUCCESS
+[0munittest.cpp:409:OnWorkspaceAllocated() : Got Workspace
+unittest.cpp:209:run() : Running Test
+unittest.cpp:215:run() : Allocated 41088-byte Workspace at virtual address 0x2ac100aba000
+unittest.cpp:fb:run() : VAFU2 Context=0x2ac100aba000 Src=0x2ac100aba080 Dest=0x2ac100abf080
+unittest.cpp:254:run() : Cache lines in each buffer=320 (bytes=20480 0x5000)
+unittest.cpp:265:run() : Initializing the destination buffer as 0xBE
+unittest.cpp:277:run() : Starting SPL Transaction with Workspace
+[0;33m  [APP]  Issuing SPL Reset
+[0m[0;33m  [APP]  CSR Write #7 : offset = 0x1010, data = 0x00000001
+[0m[0;33m  [APP]  CSR Write #8 : offset = 0x1010, data = 0x00000000
+[0m[0;33m  [APP]  CSR Write #9 : offset = 0x1004, data = 0x0000002d
+[0m[0;33m  [APP]  CSR Write #10 : offset = 0x1000, data = 0x42000000
+[0m
+*** SPL ID 0 0 0 11100101***
+Polling AFU_ID...
+[0;33m  [APP]  CSR Write #11 : offset = 0x8a04, data = 0x0000002d
+[0m[0;33m  [APP]  CSR Write #12 : offset = 0x8a00, data = 0x42000000
+[0m
+*** AFU_ID 0 0 0 11100181***
+[0;33mAPP-C : Starting SPL ... [0;33m  [APP]  CSR Write #13 : offset = 0x100c, data = 0x00000012
+[0m[0;33m  [APP]  CSR Write #14 : offset = 0x1008, data = 0x11800000
+[0m[0;33m  [APP]  CSR Write #15 : offset = 0x8a0c, data = 0x00002ac1
+[0m[0;33m  [APP]  CSR Write #16 : offset = 0x8a08, data = 0x00aba000
+[0m[0;33m  [APP]  CSR Write #17 : offset = 0x1010, data = 0x00000002
+[0mDONE
+[0munittest.cpp:439:OnTransactionStarted() : Transaction Started

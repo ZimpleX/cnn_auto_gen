@@ -1,0 +1,17 @@
+name: AlexNet
+conv_layers:
+  - name: conv1 # conv layer i
+    l_img: 224  # image width/height
+    l_kern: 11  # kernel width/height
+    f_in: 3     # input feature maps
+    f_out: 96   # output feature maps
+    stride: 4   # conv stride
+
+    ...
+
+  - name: conv5
+    l_img: 13
+    l_kern: 3
+    f_in: 384
+    f_out: 256
+    stride: 1

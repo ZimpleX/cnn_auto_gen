@@ -1,0 +1,10 @@
+byte_per_word: 4    # word: complex number
+clk_rate: 200       # unit: Mega Hz
+bandwidth: 5000     # unit: Mega word/sec
+logic: 234720       # Altera ALM/Xilinx LUT
+memory: 6           # unit: Mega bytes
+available_FFT:      # FFT sizes supported
+  - 16
+  - 32
+  - 64
+data_precision: 16  # n-bit fixed point

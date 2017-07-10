@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+TARGET=$1
+make $TARGET".out" prefix="/usr/local/aalsdk"

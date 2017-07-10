@@ -1,0 +1,3 @@
+Code Note:
+* ./convLayer/src/fft/arithmetics.sv: multiplication, addition, subtraction for different data types (e.g., fp, fxpt)
+* ./convLayer/src/fft/fft_2d.sv: row/column fft + matrix transpose --> (NOTE: this transpose is done by double for loop, how can it be mapped to streaming permutation).

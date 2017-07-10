@@ -1,0 +1,32 @@
+name: AlexNet
+conv_layers:
+  - name: conv1
+    l_img: 224
+    l_kern: 11
+    f_in: 3
+    f_out: 96
+    stride: 4
+  - name: conv2
+    l_img: 62
+    l_kern: 5
+    f_in: 96
+    f_out: 256
+    stride: 1
+  - name: conv3
+    l_img: 27
+    l_kern: 3
+    f_in: 256
+    f_out: 384
+    stride: 1
+  - name: conv4
+    l_img: 15
+    l_kern: 3
+    f_in: 384
+    f_out: 384
+    stride: 1
+  - name: conv5
+    l_img: 15
+    l_kern: 3
+    f_in: 384
+    f_out: 256
+    stride: 1
